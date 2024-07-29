@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+<body>
+    <nav>
+        <div class="logo">TradeWave</div>
+        <search>
+            <form>
+                <input type="search" id="search-input" placeholder="search product name">
+                <button id="search" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </search>
+        <ul class="menu">
+            <li><a href=""><i class="fas fa-globe"></i> EN</a></li>
+            <li><a href=""><i class="fas fa-user"></i> Account & List</a></li>
+            <li><a href=""><i class="fas fa-box"></i> Order</a></li>
+            <li><a href=""><i class="fas fa-shopping-cart"></i> Cart</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="filter">
+                <h3>Category</h3>
+                <label><input type="checkbox" class="category" value="Electronics"> Electronics</label>
+                <label><input type="checkbox" class="category" value="Clothing"> Clothing</label>
+                <label><input type="checkbox" class="category" value="Books"> Books</label>
+                <label><input type="checkbox" class="category" value="Sports"> Sports</label>
+            </div>
+            <div class="filter">
+                <h3>Price Range</h3>
+                <input type="number" id="min-price" placeholder="Min price">
+                <input type="number" id="max-price" placeholder="Max price">
+                <button id="minMax">Go</button>
+            </div>
+            <div class="filter">
+                <h3>Brand</h3>
+                <label><input type="checkbox" class="brand" value="Samsung">Samsung</label>
+                <label><input type="checkbox" class="brand" value="Caloto"> Caloto</label>
+                <label><input type="checkbox" class="brand" value="Nike"> Nike</label>
+                <label><input type="checkbox" class="brand" value="Dell"> Dell</label>
+            </div>
+        </aside>
+        <main class="products-container">
+            <div class="products"></div>
+        </main>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>
